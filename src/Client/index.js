@@ -220,7 +220,7 @@ class Launcher extends Events {
       email: this.config.email || '',
       password: this.config.password || '',
       twoFactorCode: false,
-      captcha: null,
+      captcha: this.config.captcha || null,
     };
     
     switch (typeof options) { // backward compatibility
